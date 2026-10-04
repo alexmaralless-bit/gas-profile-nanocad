@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <OutputType>Library</OutputType>
+    <RootNamespace>GasProfile.NanoCad</RootNamespace>
+    <AssemblyName>GasProfile.NanoCad</AssemblyName>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <PlatformTarget>x64</PlatformTarget>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <NanoCadRoot Condition="'$(NanoCadRoot)' == ''">C:\Program Files\Nanosoft\nanoCAD x64 24.1</NanoCadRoot>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GasProfile.Core\GasProfile.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="hostmgd">
+      <HintPath>$(NanoCadRoot)\bin\hostmgd.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="hostdbmgd">
+      <HintPath>$(NanoCadRoot)\bin\hostdbmgd.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="nrxgatemgd">
+      <HintPath>$(NanoCadRoot)\bin\nrxgatemgd.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+</Project>

@@ -53,6 +53,10 @@ C# / .NET 6, nanoCAD API (`net6.0-windows`), PowerShell для сборки.
 
 Тексты стандартов (ГОСТ 21.710-2021 и связанные) в репозиторий не входят, на них даны ссылки по названию.
 
+## Автор
+
+Telegram-канал [@sitimlab](https://t.me/sitimlab) · сайт [sitimlab.ru](https://sitimlab.ru/?utm_source=github&utm_medium=profile)
+
 ## Лицензия
 
 MIT — см. [LICENSE](LICENSE).
